@@ -1,0 +1,28 @@
+$theme-color: #ac92ec;
+$text-color: #4d4d4d;
+$tab-text: #fff;
+$secondary-info: #7d7d7d;
+$basic-info: #b3b3b3;
+$highlight-info: #d770ad;
+$body-color: #E6E6E6;
+$tab-border-color: #f1f1f1;
+$widget-background: #fff;
+$live-info: #d91e18;
+$test-color: #ffebee;
+$odi-color: #fff9c4;
+$t20-color: #E3F2FD;
+$bowl-color: #602D91;
+
+@import '_base.scss';
+@import '_app.scss';
+@import '_home.scss';
+@import '_fullCalendar.scss';
+
+.rca-batsman{
+	&.striker{
+		&:before {
+   			background: url(../images/player_lav-01.png) no-repeat;
+   		}
+   	}
+}
+@import '_responsive.scss';

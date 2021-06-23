@@ -1,0 +1,73 @@
+$theme-color: #1E4B8C;
+$text-color: #21283E;
+$tab-text: #fff;
+$secondary-info: #7d7d7d;
+$basic-info: #b3b3b3;
+$highlight-info: #A72122;
+$body-color: #E6E6E6;
+$widget-background: #fff;
+$live-info: #FF0000;
+$test-color: #ffebee;
+$odi-color: #fff9c4;
+$t20-color: #E3F2FD;
+$tab-border-color: #f1f1f1;
+$bowl-color: #294c86;
+
+@import '_base.scss';
+@import '_app.scss';
+@import '_home.scss';
+@import '_fullCalendar.scss';
+
+a{
+	&:hover, &:focus{
+		color: #548AD7;
+		text-decoration: underline;
+	}
+}
+.rca-medium-widget{
+	.rca-match-title,.rca-match-info, .rca-live-label{
+		text-align: left;
+	}
+}
+.rca-tab-list{
+	li{		
+	    &:hover, &:focus, &.active{
+    		color: $highlight-info;
+    		border-bottom-color: $highlight-info;
+    	}
+	}
+}
+.rca-tab-simple{
+	.rca-tab-list{
+		li{		
+				&:hover, &:focus, &.active{
+					color: $theme-color;
+					border-bottom-color: $highlight-info;
+				}
+		}
+	}
+}
+body{
+	background-color: transparent;
+	margin: 0;
+}
+.rca-micro-widget, .rca-mini-widget, .rca-medium-widget{
+	&.rca-top-border{
+		border-bottom: 1px solid #e0e0e0;
+	  border-left: 1px solid #e0e0e0;
+	  border-right: 1px solid #e0e0e0;
+	  box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+	}
+}
+
+.rca-match-start h2, .rca-bowler-info .rca-bolwing{
+    color: $bowl-color;
+}
+.rca-batting-score h3, .rca-bowling-score h3{
+	color: $highlight-info;
+}
+.rca-batsman.striker::before {
+	background: url(../images/player_1_red.png) no-repeat;
+}
+@import '_responsive.scss';
+

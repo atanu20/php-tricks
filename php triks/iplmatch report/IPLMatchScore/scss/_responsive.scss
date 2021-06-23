@@ -1,0 +1,49 @@
+@media (max-width:767px){
+	.rca-column-1,.rca-column-2,.rca-column-3,.rca-column-4,.rca-column-5,.rca-column-6,.rca-column-7,.rca-column-8,.rca-column-9,.rca-column-10,.rca-column-11,.rca-column-12{
+		width: 100%;
+		padding: 0;
+	}
+	.rca-mini-widget{
+		&.rca-stats{
+			min-width: 0;
+		}
+	}
+	.rca-hide-mobile{
+		display: none !important;
+	}
+	.rca-stats .rca-name-tag .rca-name-info{
+		width: 100px;
+	}
+	.rca-menu-scroll{
+		.rca-season-list{
+			>li{
+				float: left;
+				width: 33.33%;
+		    border-right: 1px solid #e6e6e6;
+    		border-bottom: 1px solid #e6e6e6;
+    		&:nth-child(3),&:nth-child(6),&:nth-child(9),&:nth-child(12),&:nth-child(15),&:nth-child(18){
+    			border-right: none;
+    		}
+				>a{
+
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+	.rca-column-1,.rca-column-2,.rca-column-3,.rca-column-4,.rca-column-5,.rca-column-6{
+		width: 50%;
+	}
+}
+@media (min-width:767px){
+	.rca-column-1,.rca-column-2,.rca-column-3,.rca-column-4,.rca-column-5,.rca-column-6,.rca-column-7,.rca-column-8,.rca-column-9,.rca-column-10,.rca-column-11,.rca-column-12{
+		float: left;
+	}
+	.rca-hide-desk{
+		display: none !important;
+	}
+	
+}
+

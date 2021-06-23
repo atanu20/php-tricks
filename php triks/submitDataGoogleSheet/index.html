@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="robots" content="noindex, nofollow">
+      <title>Google Sheet Submit</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <form method="post" id="frmSubmit">
+         <label>
+            <p class="label-txt">ENTER YOUR NAME</p>
+            <input type="text" class="input" name="name" required>
+            <div class="line-box">
+               <div class="line"></div>
+            </div>
+         </label>
+         <label>
+            <p class="label-txt">ENTER YOUR EMAIL</p>
+            <input type="text" class="input" name="email" required>
+            <div class="line-box">
+               <div class="line"></div>
+            </div>
+         </label>
+         <button type="submit" id="btnSubmit">Submit</button>
+		 <div id="msg"></div>
+      </form>
+	  <script>
+	  jQuery('#frmSubmit').on('submit',function(e){
+		e.preventDefault();
+		jQuery('#msg').html('Please wait...');
+		jQuery('#btnSubmit').attr('disabled',true);
+		jQuery.ajax({
+			url:'https://script.google.com/macros/s/AKfycbyu5bv6Zo1kO14hPpw0GtYGNgG3ImAWsVMTJcfIyHZyHohBHB2gENZgj1kRYiXoHyuL/exec',
+			type:'post',
+			data:jQuery('#frmSubmit').serialize(),
+			success:function(result){
+				jQuery('#frmSubmit')[0].reset();
+				jQuery('#msg').html('Thank You');
+				jQuery('#btnSubmit').attr('disabled',false);
+				//window.location.href='';
+			}
+		});
+	  });
+	  </script>
+   </body>
+</html>

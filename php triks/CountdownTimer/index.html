@@ -1,0 +1,47 @@
+<script>
+var countDownDate=(new Date('31 April 2019 12:12:10').getTime())/1000;
+setInterval(function(){
+	var now=new Date().getTime()/1000;
+	var diff=countDownDate-now;
+	var day=Math.floor(diff/(60*60*24));
+	var hours=Math.floor((diff % (60*60*24))/(60*60));
+	var min=Math.floor((diff % (60*60))/(60));
+	var sec=Math.floor((diff % (60)));
+	document.getElementById("day").innerHTML = day;
+	document.getElementById("hours").innerHTML = hours;
+	document.getElementById("min").innerHTML = min;
+	document.getElementById("sec").innerHTML = sec;
+	
+},1000);
+</script>
+<style>
+#count{width:100%;}
+.timer{width: 5%;
+    background-color: #80979d;
+    margin: 11px;
+	float: left;
+    font-size: 41px;
+    color: white;
+    text-align: center;
+	font-family:arial;}
+.time{background-color:#dae7ea;}
+.title{font-size:20px; }
+</style>
+<div id="count">
+	<div class="timer">
+		<div class="time" id="day"></div>
+		<div class="title">Days</div>
+	</div>
+	<div class="timer">
+		<div class="time" id="hours"></div>
+		<div class="title">Hours</div>
+	</div>
+	<div class="timer">
+		<div class="time" id="min"></div>
+		<div class="title">Mins</div>
+	</div>
+	<div class="timer">
+		<div class="time" id="sec"></div>
+		<div class="title">Sec</div>
+	</div>
+</div>

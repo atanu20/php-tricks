@@ -1,0 +1,86 @@
+.rca-logo{
+	h2{
+		margin: 0px;
+		padding: 20px 0px;
+		font-weight: normal;
+		span{
+			vertical-align: middle;
+			display: inline-block;
+		}
+		img{
+			max-width: 100%;
+			max-height: 50px;			
+			vertical-align: middle;
+			padding: 5px;
+		}	
+	}
+}
+
+
+.rca-news-widget{
+	min-width: 200px;
+    max-width: 100%;
+    min-height: 425px;
+    background-color: #fff;
+    margin: 10px 0px;
+    h3{
+    	background-color: $live-info;
+    	padding: 5px 5px 5px 10px;
+    	color: #fff;
+    	margin: 0px;
+    }
+  	img{
+  		margin-right: 15px;
+  		border-radius: 3px;
+  	}
+}
+.rca-post{
+	border-bottom: 1px solid $basic-info;
+	margin-bottom: 10px;
+	h4{
+		margin: 5px 0 0 0;		
+	}
+	p{
+		margin: 15px 0 5px 0;
+		img{
+			margin-top: 5px;
+		}
+	}
+	.rca-post-info{
+		color: $basic-info;
+		margin-top: 5px;
+		font-size: 13px;
+	}
+	.rca-post-desc{
+		img{
+			max-width: 100%;
+			margin: 10px 0 0 0;
+		}
+	}
+}
+
+.rca-blog-image{
+	position: relative;
+	text-align: center;
+	background-color: $basic-info;
+	img{
+		max-width: 100%;
+		max-height: 300px;
+	}
+	.rca-blog-head{
+		position: absolute;
+		bottom: 3px;
+		width: 100%;
+		padding: 10px;
+		background-color: rgba($secondary-info, 0.7);
+		color: $tab-text;
+	}
+}
+
+.rca-footer{
+	padding: 10px 0;
+	li{
+		display: inline-block;
+		padding: 0 5px;
+	}
+}

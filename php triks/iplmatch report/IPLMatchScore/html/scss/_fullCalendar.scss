@@ -1,0 +1,68 @@
+
+.fc-widget-header{
+	border: none !important;
+	border-bottom: 1px solid $body-color !important;
+	td,th{
+		border: none;
+	    width: 14%;
+	    text-align: center;
+	    color: $text-color;
+	    display: table-cell;
+	    font-weight: 700;
+	    padding: 10px 0px;
+	    text-transform: uppercase;
+	}
+}
+.fc-widget-content{
+	border: none !important;
+}
+.fc-content-skeleton{
+	border: none !important;
+	border-bottom: 1px solid $body-color;
+	min-height: 112px;
+	table{
+		min-height: 112px;
+	}
+	.fc-event-container{
+		padding: 0 5px !important;
+		font-size: 13px;
+		a{
+			border: none !important;
+			background-color: $test-color !important;
+			padding: 5px;
+			margin: 2px 0px !important;
+			color: $secondary-info;
+			&:hover, &:focus{
+				color: $live-info !important;
+				.fc-time{
+					color: $live-info !important;
+			    }
+			    .fc-title{
+					color: $live-info !important;
+				}
+			}
+		}
+		.fc-content{
+			color: $secondary-info;
+			font-size: 13px;
+		    .fc-time{
+		    	text-transform: lowercase;
+		    }
+		    .fc-title{
+		    	color: $text-color;
+				display: inline-block;
+				margin-left: 3px;
+				font-weight: bold;
+		    }
+		}
+	}
+}
+.fc-ltr{
+	.fc-basic-view{
+	 	.fc-day-number{
+	 		text-align: left;
+			padding: 2px 5px;
+			font-size: 13px;
+	 	}
+	 }
+}

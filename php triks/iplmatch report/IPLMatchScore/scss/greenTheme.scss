@@ -1,0 +1,29 @@
+$theme-color: #1eb848;
+$text-color: #4d4d4d;
+$tab-text: #fff;
+$secondary-info: #7d7d7d;
+$basic-info: #b3b3b3;
+$highlight-info: #f9690e;
+$body-color: #E6E6E6;
+$tab-border-color: #f1f1f1;
+$widget-background: #fff;
+$live-info: #d91e18;
+$test-color: #ffebee;
+$odi-color: #fff9c4;
+$t20-color: #E3F2FD;
+$bowl-color: #602D91;
+
+@import '_base.scss';
+@import '_app.scss';
+@import '_home.scss';
+@import '_responsive.scss';
+@import '_fullCalendar.scss';
+
+.rca-micro-widget, .rca-mini-widget, .rca-medium-widget{
+	&.rca-top-border{
+		border-bottom: 1px solid #e0e0e0;
+	  border-left: 1px solid #e0e0e0;
+	  border-right: 1px solid #e0e0e0;
+	  box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+	}
+}
